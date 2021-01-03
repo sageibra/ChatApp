@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		12EDA01B25A20C6100238689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EDA01A25A20C6100238689 /* AppDelegate.swift */; };
 		12EDA01D25A20C6100238689 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EDA01C25A20C6100238689 /* SceneDelegate.swift */; };
-		12EDA01F25A20C6100238689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EDA01E25A20C6100238689 /* ViewController.swift */; };
-		12EDA02225A20C6100238689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12EDA02025A20C6100238689 /* Main.storyboard */; };
+		12EDA01F25A20C6100238689 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EDA01E25A20C6100238689 /* ChatViewController.swift */; };
 		12EDA02425A20C6200238689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12EDA02325A20C6200238689 /* Assets.xcassets */; };
 		12EDA02725A20C6200238689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12EDA02525A20C6200238689 /* LaunchScreen.storyboard */; };
+		12EDA03725A20DEF00238689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12EDA03625A20DEE00238689 /* Main.storyboard */; };
+		12EDA03B25A20EBF00238689 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EDA03A25A20EBF00238689 /* LoginViewController.swift */; };
+		12EDA03E25A20EEF00238689 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EDA03D25A20EEF00238689 /* RegisterViewController.swift */; };
+		12EDA04125A20F0F00238689 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12EDA04025A20F0F00238689 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12EDA01725A20C6100238689 /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12EDA01A25A20C6100238689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12EDA01C25A20C6100238689 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		12EDA01E25A20C6100238689 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		12EDA02125A20C6100238689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		12EDA01E25A20C6100238689 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		12EDA02325A20C6200238689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12EDA02625A20C6200238689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12EDA02825A20C6200238689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12EDA03625A20DEE00238689 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		12EDA03A25A20EBF00238689 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		12EDA03D25A20EEF00238689 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		12EDA04025A20F0F00238689 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		12EDA01925A20C6100238689 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				12EDA03325A20D0200238689 /* Model */,
+				12EDA03225A20CFA00238689 /* Views */,
+				12EDA03025A20CB900238689 /* Controllers */,
 				12EDA01A25A20C6100238689 /* AppDelegate.swift */,
 				12EDA01C25A20C6100238689 /* SceneDelegate.swift */,
-				12EDA01E25A20C6100238689 /* ViewController.swift */,
-				12EDA02025A20C6100238689 /* Main.storyboard */,
 				12EDA02325A20C6200238689 /* Assets.xcassets */,
-				12EDA02525A20C6200238689 /* LaunchScreen.storyboard */,
 				12EDA02825A20C6200238689 /* Info.plist */,
 			);
 			path = ChatApp;
+			sourceTree = "<group>";
+		};
+		12EDA03025A20CB900238689 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				12EDA01E25A20C6100238689 /* ChatViewController.swift */,
+				12EDA03A25A20EBF00238689 /* LoginViewController.swift */,
+				12EDA03D25A20EEF00238689 /* RegisterViewController.swift */,
+				12EDA04025A20F0F00238689 /* WelcomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		12EDA03225A20CFA00238689 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12EDA03625A20DEE00238689 /* Main.storyboard */,
+				12EDA02525A20C6200238689 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		12EDA03325A20D0200238689 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +157,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12EDA03725A20DEF00238689 /* Main.storyboard in Resources */,
 				12EDA02725A20C6200238689 /* LaunchScreen.storyboard in Resources */,
 				12EDA02425A20C6200238689 /* Assets.xcassets in Resources */,
-				12EDA02225A20C6100238689 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12EDA01F25A20C6100238689 /* ViewController.swift in Sources */,
+				12EDA03B25A20EBF00238689 /* LoginViewController.swift in Sources */,
+				12EDA03E25A20EEF00238689 /* RegisterViewController.swift in Sources */,
+				12EDA01F25A20C6100238689 /* ChatViewController.swift in Sources */,
+				12EDA04125A20F0F00238689 /* WelcomeViewController.swift in Sources */,
 				12EDA01B25A20C6100238689 /* AppDelegate.swift in Sources */,
 				12EDA01D25A20C6100238689 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +182,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		12EDA02025A20C6100238689 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				12EDA02125A20C6100238689 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		12EDA02525A20C6200238689 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FT674V95S;
 				INFOPLIST_FILE = ChatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +325,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = che.tech.ChatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FT674V95S;
 				INFOPLIST_FILE = ChatApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +345,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = che.tech.ChatApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
